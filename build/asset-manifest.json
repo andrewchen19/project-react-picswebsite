@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/project-react-picswebsite/static/css/main.1daddebc.css",
+    "main.js": "/project-react-picswebsite/static/js/main.d28010ae.js",
+    "index.html": "/project-react-picswebsite/index.html",
+    "main.1daddebc.css.map": "/project-react-picswebsite/static/css/main.1daddebc.css.map",
+    "main.d28010ae.js.map": "/project-react-picswebsite/static/js/main.d28010ae.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1daddebc.css",
+    "static/js/main.d28010ae.js"
+  ]
+}
