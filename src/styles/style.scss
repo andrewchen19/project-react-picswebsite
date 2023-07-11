@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "微軟正黑體", "Microsoft JhengHei", sans-serif;
+}
+
+.morePicture {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0 2rem 0;
+
+  button {
+    font-size: 1rem;
+    padding: 0.25rem;
+    border: none;
+    background-color: plum;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: black;
+    }
+  }
+}
+
+@import "./nav";
+@import "./search";
+@import "./picture";
+@import "./footer";

@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState } from "react";
+
+import Layout from "./Layout";
+import Homepage from "./pages/Homepage";
+import Page404 from "./pages/Page404";
+import "./styles/style.css";
 
 function App() {
+  const [isChinese, setIsChinese] = useState(true);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={<Layout isChinese={isChinese} setIsChinese={setIsChinese} />}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <Route index element={<Homepage isChinese={isChinese} />}></Route>
+          <Route path="*" element={<Page404 />}></Route>
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

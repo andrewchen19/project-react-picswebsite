@@ -1,0 +1,24 @@
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+
+  input {
+    // 讓輸入框放大，以及讓字不要貼齊邊框
+    font-size: 1.8rem;
+    padding: 0.25rem;
+    border: 2px solid plum;
+    // 移除點選後，會出現的選取框
+    outline: none;
+  }
+
+  button {
+    font-size: 1.8rem;
+    padding: 0.25rem;
+    border: 2px solid plum;
+    background-color: plum;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}

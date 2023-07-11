@@ -1,0 +1,37 @@
+nav {
+  background-color: plum;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    li {
+      padding: 1rem 0rem 1rem 3rem;
+
+      a {
+        text-decoration: none;
+        color: azure;
+        font-size: 1.3rem;
+        font-weight: bold;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          color: mediumorchid;
+        }
+      }
+    }
+  }
+
+  select {
+    margin-left: 2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: azure;
+    background-color: plum;
+    border: none;
+    // 移除點選後所出現的選取框
+    outline: none;
+  }
+}

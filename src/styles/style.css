@@ -1,0 +1,134 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "微軟正黑體", "Microsoft JhengHei", sans-serif;
+}
+
+.morePicture {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0 2rem 0;
+}
+.morePicture button {
+  font-size: 1rem;
+  padding: 0.25rem;
+  border: none;
+  background-color: plum;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.morePicture button:hover {
+  color: black;
+}
+
+nav {
+  background-color: plum;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+}
+nav ul li {
+  padding: 1rem 0rem 1rem 3rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: azure;
+  font-size: 1.3rem;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+nav ul li a:hover {
+  color: mediumorchid;
+}
+nav select {
+  margin-left: 2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: azure;
+  background-color: plum;
+  border: none;
+  outline: none;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+.search input {
+  font-size: 1.8rem;
+  padding: 0.25rem;
+  border: 2px solid plum;
+  outline: none;
+}
+.search button {
+  font-size: 1.8rem;
+  padding: 0.25rem;
+  border: 2px solid plum;
+  background-color: plum;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.pictures .picture {
+  padding: 1rem;
+  width: 400px;
+}
+.pictures .picture .imageContainer {
+  overflow: hidden;
+  height: 40vh;
+}
+.pictures .picture .imageContainer img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  transition: all 0.3 ease-in-out;
+}
+.pictures .picture .imageContainer img:hover {
+  transform: scale(1.25);
+}
+.pictures .picture p {
+  font-size: 1.1rem;
+  padding: 0.3rem 0;
+}
+.pictures .picture p a {
+  text-decoration: none;
+  color: rgb(225, 136, 225);
+  transition: all 0.2s ease-in-out;
+}
+.pictures .picture p a:hover {
+  color: rgb(143, 101, 190);
+}
+
+.footer {
+  min-height: 10vh;
+  background-color: plum;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer p {
+  font-size: 0.8 rem;
+  font-weight: bold;
+  color: azure;
+}/*# sourceMappingURL=style.css.map */
